@@ -5,6 +5,7 @@ function App() {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
   const [bmi, setBmi] = useState(null);
+  const [bmitext, setBmitext] = useState(null);
 
   const scale = [
     { label: "Height (m)", placeholder: "Enter height in meters", state: height, setState: setHeight },
@@ -23,11 +24,13 @@ function App() {
     const bmiValue = (w / (h * h)).toFixed(2);
     setBmi(bmiValue); 
     if (bmiValue < 18.5) {
-      alert("You are underweight!");
+      setBmitext("You are underweight!");
     } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
-      alert("You are healthy!");
+      setBmitext("You are healthy!");
     } else if (bmiValue >= 25 && bmiValue <= 29.9) {  
-      alert("You are overweight!");
+      setBmitext("You are overweight!");
+    }else {
+      setBmitext("You are obese!");
     }
   };
 
@@ -50,6 +53,7 @@ function App() {
       </form>
 
       {bmi !== null && <h2>Your BMI: {bmi}</h2>}
+      {bmitext !== null && <h2>Your BMI: {bmitext}</h2>}
     </div>
   );
 }
