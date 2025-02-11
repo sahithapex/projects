@@ -10,3 +10,4 @@ console.log(`Fibonacci sequence up to ${num}:`);
 for (let i = 0; i < num; i++) {
       console.log(fibonacci(i));
 }
+window.open('https://javascript.info/')
