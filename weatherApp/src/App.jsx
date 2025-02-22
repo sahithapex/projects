@@ -29,6 +29,8 @@ setloading(false)
 
   return (
     <div>
+      <h1>Weather App</h1>
+      <p>{new Date().toLocaleString()}</p>
       <div>
         <input type="text" ref={reffocus}
         placeholder="Enter the city name"
@@ -39,9 +41,19 @@ setloading(false)
       </div>
       <div>{loading ? <p>loading...</p> :
       <div>
-        <h1>{weather?.location?.name}</h1>
-       
-        
+       {weather && (
+        <div>
+          <h1>{weather.location.name}</h1>
+          <h1>{weather.location.country}</h1>
+          <h1>{weather.location.lat}</h1>
+          <h1>{weather.location.lon}</h1>
+          <h1>{weather.current.observatcurrent}</h1>
+          <h1>{weather.current.temperature}</h1>
+          <h1>{weather.current.wind_degree}</h1>
+          <h1>{weather.current.weather_descriptions}</h1>
+          <img src={weather.current.weather_icons} alt="icon" />
+        </div>
+)}      
         <p></p>
       </div>
 }
