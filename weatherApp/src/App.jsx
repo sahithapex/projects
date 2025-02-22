@@ -10,7 +10,7 @@ const App = () => {
 
 
 const onfetchdata= async ()=>{
-  if (query !==null){
+
   if (reffocus.current){
     reffocus.current.focus()
   }
@@ -26,7 +26,7 @@ const onfetchdata= async ()=>{
 }
 setloading(false)
 }
-}
+
   return (
     <div>
       <div>
