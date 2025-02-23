@@ -1,6 +1,8 @@
 import React, {useState,useRef} from 'react'
+import './App.css'
 
-const API_KEY = "458600d2c5043f5918742b61614b4484";  
+
+const API_KEY = "458600d2c5043f5918742b61614b4484sahith";  
 
 const App = () => {
   const [query,setquery]=useState("")
@@ -29,7 +31,8 @@ setloading(false)
 
   return (
     <div>
-      <h1>Weather App</h1>
+    <div className='main'>
+      <h1 className='text'>Weather App</h1>
       <p>{new Date().toLocaleString()}</p>
       <div>
         <input type="text" ref={reffocus}
@@ -43,23 +46,27 @@ setloading(false)
       <div>
        {weather && (
         <div>
-          <h1>{weather.location.name}</h1>
-          <h1>{weather.location.country}</h1>
-          <h1>{weather.location.lat}</h1>
-          <h1>{weather.location.lon}</h1>
-          <h1>{weather.current.observatcurrent}</h1>
-          <h1>{weather.current.temperature}</h1>
-          <h1>{weather.current.wind_degree}</h1>
-          <h1>{weather.current.weather_descriptions}</h1>
+          <p>City Name: {weather.location.name}</p>
+          <p>Country: {weather.location.country}</p>
+          <p>Latitude: {weather.location.lat}</p>
+          <p>Longitude: {weather.location.lon}</p>
+          <p>{weather.current.observatcurrent}</p>
+          <p>Temperature: {weather.current.temperature}</p>
+          <p>Wind Degree: {weather.current.wind_degree}</p>
+          <p>{weather.current.weather_descriptions}</p>
           <img src={weather.current.weather_icons} alt="icon" />
-        </div>
-)}      
-        <p></p>
+        </div> 
+        )}      
+        
       </div>
 }
-      
       </div>
-      
+      </div>
+
+
+    <div>
+    <hr className='line'></hr>
+    </div>
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.main{
+      width: 30%; 
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 10px auto;
+
+}
+.line{
+      border: 2px solid black;
+      width: 95vw;
+      margin:5px ;
+      position: relative;
+}
+.text{
+      text-align: center;
+}

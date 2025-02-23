@@ -1,8 +1,5 @@
 body{
-  display: flex; 
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
   padding: 10px;
+  background-color: rgb(90, 236, 255);
 
 }
