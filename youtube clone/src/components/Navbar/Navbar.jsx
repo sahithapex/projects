@@ -10,14 +10,13 @@ import { CgProfile } from "react-icons/cg";
 const Navbar = () => {
   return (
     <nav className="flex-div">
-    
       <div className="nav-left flex-div">
         <FiMenu className="menu-icon" />
         <img className="logo" src={logo} alt="YouTube logo" />
       </div>
 
       <div className="nav-middle flex-div">
-        <form>
+        <form className='formcss'>
           <input type="text" placeholder="Search" aria-label="Search videos" />
           <button type="submit" aria-label="Search">
             <GoSearch />
