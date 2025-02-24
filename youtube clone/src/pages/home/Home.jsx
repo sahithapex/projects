@@ -1,14 +1,15 @@
-import React from 'react'
-import { RiMoreFill } from "react-icons/ri";
-import './Home.css'
+import React from 'react';
+import Sidebar from '../../components/Sidebar/Sidebar.jsx';
+import './Home.css';
 
-const Home = () => {
+const Home = ({ Onmenu }) => {
   return (
-    <div>
-      <h1>hi ra sahith</h1>
-      <RiMoreFill/>
+    <div className="">
+      <Sidebar Onmenu={Onmenu} />
+      
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
+

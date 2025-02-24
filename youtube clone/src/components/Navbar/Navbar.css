@@ -14,7 +14,7 @@ nav{
   align-items: center;
   background-color: #fff;
   padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
   position: static;
   z-index: 1000;
   top: 0;
@@ -30,6 +30,13 @@ nav{
   margin: 0px  ;
   cursor: pointer;
   margin-top: 2px;
+}
+.logotext{
+  font-weight: bold;
+  font-size: 20px;
+  color: #333; /* Dark Gray */
+  margin-top: 2px;
+  font-family: Roboto, Arial, Montserrat;
 }
 .nav-left{
   gap: 15px;
@@ -54,6 +61,7 @@ input{
   border: none;
   outline: none;
   padding: 8px 12px;
+  width: 600px;
   
 }
 button {
