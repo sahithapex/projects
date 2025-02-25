@@ -1,12 +1,36 @@
 .small{
-      background-color: red;
-      width: 16%; 
+      background-color: #fff;
+      width: 6%; 
       height: 100vh;
       position: fixed;
-      padding-left: 1%;
+      padding-left: 0.5%;
       padding-top: 5px ;
-      overflow: hidden; 
+      overflow: hidden;
 }
+.small p {
+      display: none;
+}
+.small usersignin{
+      display: none;
+}
+.small:hover {
+      overflow: auto; 
+    }
+    
+
+    .small::-webkit-scrollbar {
+      width: 8px; 
+    }
+    
+    .small::-webkit-scrollbar-thumb {
+      background: gray; 
+      border-radius: 4px; 
+    }
+    
+    .small::-webkit-scrollbar-thumb:hover {
+      background: darkgray;
+    }
+    
 
 .sidebar{
       background-color: #fff;
@@ -55,6 +79,12 @@
       font-size: large;
       flex-shrink: 0;
       box-sizing: border-box;
+}
+.small .usersignin {
+      display: none;
+}
+.small .my-divider{
+      display: none;
 }
 .btntext{
 color: rgb(0, 85, 255);

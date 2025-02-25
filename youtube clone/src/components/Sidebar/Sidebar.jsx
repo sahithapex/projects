@@ -34,10 +34,11 @@ const Sidebar = ({Onmenu}) => {
         <div className='usersignin btntext'>
           <FaRegCircleUser/>
         <button className='btntext'>Signin</button>
-        </div>
-        <hr/>
        
-        <h4 className='mar'>Explore</h4>
+        </div>
+        <hr className="my-divider" />
+       
+        <p className='mar'>Explore</p>
         <div className='side-link'>
           <FaHotjar size={28} /> <p className="para">Trending</p>
         </div>
