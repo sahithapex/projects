@@ -5,22 +5,31 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-.navbar{
-      background-color: aqua;
+    .navbar {
+      background-color: #015e80;
+      padding: 15px;
+    }
+    
+    .nav-links {
+      list-style: none;
       display: flex;
-      flex-direction: row;
+      gap: 20px;
       justify-content: center;
-      align-content: center;
-      gap: 20px; 
-      color: black; 
-      padding: 10px 10px;
-      position: static;
-      z-index: 1000;
-      top: 0;
-      width: 100%;
-     
-} 
-nav a{
-      text-decoration: none;  
-      margin: 10px; 
-}
+      padding: 0;
+    }
+    
+    .nav-links li {
+      display: inline;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+    }
+    
+    .nav-links a:hover {
+      color: #f0a500;
+    }
+    

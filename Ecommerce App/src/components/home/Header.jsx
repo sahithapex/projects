@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar.jsx'
-import Api from '../Api/Api.jsx'
+import Product from '../product/product'
 const Header = () => {
   return (
     <div className='main'>
       <Navbar/>
       <h1>hi sahith</h1>
-      <Api/>
+      <Product/>
     </div>
   )
 }

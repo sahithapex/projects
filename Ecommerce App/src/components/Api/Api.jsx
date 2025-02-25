@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-const Api = () => {
-  const [product, setProduct] = useState([]); 
+const useApi = () => {
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch("https://dummyjson.com/products");
-        const data = await res.json(); 
-        setProduct(data.products); 
+        const data = await res.json();
+        setProducts(data.products);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -16,16 +16,7 @@ const Api = () => {
     fetchData();
   }, []);
 
-  return (
-    <div>
-      <ul>
-        {product.map((item) => (
-          <li key={item.id}>{item.title}</li> 
-        ))}
-      </ul>
-      <h1>Hi Sahith</h1>
-    </div>
-  );
+  return products; 
 };
 
-export default Api;
+export default useApi;
