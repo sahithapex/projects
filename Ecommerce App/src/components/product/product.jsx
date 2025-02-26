@@ -1,9 +1,9 @@
 import React from "react";
-import useApi from "../Api/Api.jsx"; 
-import './product.css'
+import { useProductContext } from "../contextApi/contextApi.jsx";
+import "./product.css";
 
 const Product = () => {
-  const products = useApi(); 
+  const products = useProductContext();
 
   return (
     <div className="mainbody">
@@ -15,7 +15,7 @@ const Product = () => {
               <h2>{product.title}</h2>
               <p>Price: ${product.price} (Discount: {product.discountPercentage}%)</p>
               <p>Rating: {product.rating} / 5</p>
-              <p>Stock: {product.stock} ({product.availabilityStatus})</p>
+              <p>Stock: {product.stock}</p>
               <p>Brand: {product.brand}</p>
             </div>
           ))
