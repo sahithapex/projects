@@ -1,18 +1,21 @@
 import './App.css';
 import Box from '@mui/material/Box';
-import * as React from 'react';
+import React from 'react';
 import TextField from '@mui/material/TextField';
+import Header from './components/Header.jsx';
 
 const App = () => {
   return (
-    <div className='main'>
-      <h1>Todo list</h1>
-    <Box sx={{ width: 500, maxWidth: '100%' }}>
-      <TextField fullWidth label="Enter text" id="fullWidth" />
-    </Box>
-    </div>
+    <>
+      <Header />
+      <div className="main">
+        <h1>Todo List</h1>
+        <Box sx={{ width: 500, maxWidth: '100%', mt: 2 }}>
+          <TextField fullWidth label="Enter Task" id="taskInput" />
+        </Box>
+      </div>
+    </>
   );
 };
 
 export default App;
-
