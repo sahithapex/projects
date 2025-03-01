@@ -1,16 +1,9 @@
-import React from 'react'
-import './style.css'
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import Box from '@mui/material/Box';
+import React from "react";
+import "./style.css";
 
 const Header = () => {
-  return (
-      <h1>Creating Daily Habits & Routines</h1>  
+  return <h1 className="header">Creating Daily Habits & Routines</h1>;
+};
 
-  )
-}
+export default Header;
 
-export default Header
