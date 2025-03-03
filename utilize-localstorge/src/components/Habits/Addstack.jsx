@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
+import { useAppContext } from "./AppContext";
 import Routine from "./Routine.jsx";
 import "./Addstack.css";
 
 const Addstack = () => {
-  const [formdata, setFormdata] = useState(null); 
+  const { addHabitStack } = useAppContext(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const form = new FormData(e.target);
-    const newFormData = Object.fromEntries(form.entries()); 
+    const newFormData = Object.fromEntries(form.entries());
 
-    setFormdata(newFormData);
-    console.log("Form Submitted:", newFormData);
+    addHabitStack(newFormData); 
 
-    e.target.reset(); 
+    e.target.reset();
   };
 
   return (
@@ -25,7 +25,7 @@ const Addstack = () => {
         <select className="addstack-select" name="routine">
           <option value="">Select Routine</option>
           {Routine.map((routine) => (
-            <option key={routine.id} value={routine.id}>
+            <option key={routine.id} value={routine.label}>
               {routine.label}
             </option>
           ))}
@@ -44,8 +44,8 @@ const Addstack = () => {
             <label className="addstack-label">Hours:</label>
             <select className="addstack-select" name="hours">
               {[...Array(13)].map((_, i) => (
-                <option key={i} value={(i).toString().padStart(2, "0")}>
-                  {i.toString().padStart(2, "0") }
+                <option key={i} value={i.toString().padStart(2, "0")}>
+                  {i.toString().padStart(2, "0")}
                 </option>
               ))}
             </select>
@@ -71,15 +71,6 @@ const Addstack = () => {
 
         <button type="submit" className="sub-btn">Submit</button>
       </form>
-
-      {formdata && (
-        <div className="submitted-data">
-          <h2>Submitted Data:</h2>
-          <p><strong>Routine:</strong> {formdata.routine}</p>
-          <p><strong>Name:</strong> {formdata.name}</p>
-          <p><strong>Time:</strong> {formdata.hours}:{formdata.minute} {formdata.ampm}</p>
-        </div>
-      )}
     </div>
   );
 };
