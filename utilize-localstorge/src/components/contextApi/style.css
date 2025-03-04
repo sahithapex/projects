@@ -1,9 +1,9 @@
-/* Global Styles */
+
 body {
       font-family: Arial, sans-serif;
     }
     
-    /* Centering the content */
+    
     .app-container {
       display: flex;
       justify-content: center;
@@ -12,7 +12,7 @@ body {
       background-color: #f4f4f4;
     }
     
-    /* Toggle Container */
+    
     .toggle-container {
       display: flex;
       align-items: center;
@@ -21,7 +21,7 @@ body {
       font-weight: bold;
     }
     
-    /* Toggle Switch */
+   
     .toggle-switch {
       width: 50px;
       height: 25px;
@@ -32,7 +32,7 @@ body {
       transition: background-color 0.3s;
     }
     
-    /* Toggle Handle */
+    
     .toggle-handle {
       width: 20px;
       height: 20px;
@@ -45,7 +45,7 @@ body {
       transition: left 0.3s;
     }
     
-    /* Dark Mode Active */
+    
     .toggle-switch.dark {
       background-color: #222;
     }

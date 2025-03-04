@@ -4,7 +4,7 @@ import Routine from "./Routine.jsx";
 import "./Addstack.css";
 
 const Addstack = () => {
-  const { addHabitStack } = useAppContext(); 
+  const { isDark,addHabitStack } = useAppContext(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const Addstack = () => {
   };
 
   return (
-    <div className="addstack-container">
+    <div className={`addstack-container ${isDark ? 'light' : 'dark'}`}>
       <h1 className="addstack-heading">Habit Stack</h1>
       <form className="addstack-form" onSubmit={handleSubmit}>
         <label className="addstack-label">Habit Stack Title:</label>
