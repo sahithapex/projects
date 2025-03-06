@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import expenses from "./expenses";
+import expenses from "../data/expensetype";
 
 const FormExpense = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
