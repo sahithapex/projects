@@ -1,0 +1,86 @@
+
+.budget-container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+   
+    .budget-container h2 {
+      color: #2E7D32;
+      margin-bottom: 20px;
+    }
+    
+    .budget-container h3 {
+      color: #333;
+      margin-top: 15px;
+    }
+    
+   
+    .budget-container label {
+      display: block;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #444;
+    }
+    
+    /* Input Fields */
+    .budget-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    
+    .budget-container input:focus {
+      border-color: #2E7D32;
+      outline: none;
+      box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+    }
+    
+    /* Button */
+    .budget-container button {
+      width: 100%;
+      padding: 10px;
+      background: #2E7D32;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    
+    .budget-container button:hover {
+      background: #1B5E20;
+    }
+    
+    /* Expense List */
+    .budget-container ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+    
+    .budget-container li {
+      background: #F1F8E9;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    /* Total Expenses & Remaining Budget */
+    .budget-container h3:last-child {
+      font-weight: bold;
+      color: #D32F2F;
+    }
+    

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./BudgetManager.css";
+import "./budget.css";
 
 const BudgetManager = () => {
   const [income, setIncome] = useState("");
