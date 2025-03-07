@@ -1,11 +1,19 @@
 import React from "react";
-import FormExpense from "./components/Formexpense";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Header/Navbar"; // Import the Navbar
+import Dashboard from "./components/Header/Dashboard";
+
+import FormExpense from "./components/FormExpense";
 
 function App() {
   return (
-    <div>
-      <FormExpense />
-    </div>
+    <Router>
+      <Navbar /> 
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/add-expense" element={<FormExpense />} />
+      </Routes>
+    </Router>
   );
 }
 
