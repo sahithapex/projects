@@ -1,14 +1,15 @@
 import React from 'react'
-import Addstack from '../Habits/Addstack/Addstack.jsx';
-import Liststack from '../Habits/liststack/Liststack.jsx';
-import Middlestack from '../Habits/Middlestack/middle'
+import Addstack from '../Habits/AddStack/AddStack.jsx';
+import ListStack from '../Habits/ListStack/ListStack.jsx';
+import MiddleStack from '../Habits/MiddleStack/middle'
+import './Maincontent.css'
 
 const Maincontent = () => {
   return (
-    <div className="main-content">
+    <div className="Main-content">
       <Addstack/>
-      <Middlestack/>
-      <Liststack/>
+      <MiddleStack/>
+      <ListStack/>
     </div>
   )
 }

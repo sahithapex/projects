@@ -1,9 +1,6 @@
-.main-content {
+.Main-content {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px; 
-      margin: 50px auto;
-      flex-wrap: wrap; 
+      flex-direction: row;
+      justify-content:space-around;
     }
     

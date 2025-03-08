@@ -1,1 +1,22 @@
 
+:root {
+  --bg-color: linear-gradient(135deg, #ffffff, #dff6ff); 
+  --text-color: black;
+  --divider-color: #ccc;
+  --border-color: white;
+  --primary-color: #007bff;
+}
+    
+    [data-theme="dark"] {
+      --bg-color:linear-gradient(135deg,#2E1A47,#121212);
+      --text-color: white;
+      --divider-color: #444;
+      --border-color: white;
+      --primary-color: #1e90ff;
+    }
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.1s ease, color 0.1s ease;
+    }
+    

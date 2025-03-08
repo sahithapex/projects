@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './middle.css';
 
-const Main = () => {
+const MiddleStack = () => {
   const [status, setStatus] = useState('');
 
   return (
@@ -31,4 +31,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MiddleStack;

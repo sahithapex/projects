@@ -1,42 +1,24 @@
 .addstack-container {
-  min-width: 300px;
-  max-width: 400px;
-  margin: 20px;
-  padding: 20px;
+  width: 28%;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
-}
-
-.addstack-container.light {
-  background: white;
-  color: black;
-}
-
-.addstack-container.dark {
-  background: black;
-  color: white;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .addstack-label {
   display: block;
   font-weight: bold;
   margin: 10px 0 5px;
-}
-
-.addstack-label.light {
-  color: black;
-}
-
-.addstack-label.dark {
-  color: white;
+  color: var(--text-color);
 }
 
 .addstack-input,
 .addstack-select {
   width: 80%;
-  padding: auto;
-  margin: auto;
+  padding: 8px;
   margin-bottom: 15px;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -66,15 +48,7 @@
   margin-top: 20px;
   border: none;
   height: 1px;
-  background: #0a0909;
-}
-
-.addstack-divider.light {
-  background: #ccc;
-}
-
-.addstack-divider.dark {
-  background: #444;
+  background: var(--divider-color);
 }
 
 .sub-btn {

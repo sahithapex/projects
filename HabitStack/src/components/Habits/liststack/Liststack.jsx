@@ -1,11 +1,12 @@
 import React from "react";
 import { useAppContext } from "../../contextApi/contextApi";
+import './List.css'
 
-const Liststack = () => {
+const ListStack = () => {
   const { habitStacks } = useAppContext();
 
   return (
-    <div>
+    <div className="containerList">
       <h1>Habit Stack Lists</h1>
       <ul>
         {habitStacks.length > 0 ? (
@@ -22,4 +23,4 @@ const Liststack = () => {
   );
 };
 
-export default Liststack;
+export default ListStack;

@@ -1,24 +1,21 @@
 import React from "react";
-import { useAppContext } from "../../contextApi/contextApi";
+import { useAppContext } from "../../contextApi/contextApi.jsx";
 import Routine from "../Routine.jsx";
 import "./Addstack.css";
 
 const Addstack = () => {
-  const { isDark,addHabitStack } = useAppContext(); 
+  const { addHabitStack } = useAppContext(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const form = new FormData(e.target);
     const newFormData = Object.fromEntries(form.entries());
-
-    addHabitStack(newFormData); 
-
+    addHabitStack(newFormData);
     e.target.reset();
   };
 
   return (
-    <div className={`addstack-container ${isDark ? 'light' : 'dark'}`}>
+    <div className="addstack-container">
       <h1 className="addstack-heading">Habit Stack</h1>
       <form className="addstack-form" onSubmit={handleSubmit}>
         <label className="addstack-label">Habit Stack Title:</label>

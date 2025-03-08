@@ -1,0 +1,9 @@
+.containerList {
+  text-align: center;
+  padding: 10px;
+  width: 28%;
+  border: 2px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 10px;
+}

@@ -1,9 +1,14 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
+
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(false);
   const [habitStacks, setHabitStacks] = useState([]); 
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+  }, [isDark]);
 
   const toggleTheme = () => setIsDark((prev) => !prev);
 
@@ -12,7 +17,7 @@ export const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ isDark, toggleTheme, habitStacks, addHabitStack }}>
+    <AppContext.Provider value={{ isDark, toggleTheme,habitStacks, addHabitStack }}>
       {children}
     </AppContext.Provider>
   );
