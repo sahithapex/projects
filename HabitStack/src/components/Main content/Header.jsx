@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
-import { useAppContext } from "./contextApi/contextApi";
+import "./header.css";
+import { useAppContext } from "../contextApi/contextApi";
 
 const Header = () => {
   const { isDark,toggleTheme } = useAppContext();

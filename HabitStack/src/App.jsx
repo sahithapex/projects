@@ -1,18 +1,15 @@
 import './App.css';
 import React from 'react';
-import Header from './components/Header.jsx';
-import Addstack from './components/Habits/Addstack.jsx';
-import Liststack from './components/Liststack/Liststack.jsx';
+import Header from './components/Main content/Header.jsx';
 import { AppProvider } from "./components/contextApi/contextApi"; 
+import Maincontent from './components/Main content/Maincontent.jsx'
+
 
 const App = () => {
   return (
     <AppProvider> 
       <Header />
-      <Addstack />
-      <div className="main">
-        <Liststack />
-      </div>
+      <Maincontent/>
     </AppProvider>
   );
 };

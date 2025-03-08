@@ -1,9 +1,4 @@
-
-body {
-      font-family: Arial, sans-serif;
-    }
-    
-    
+  
     .app-container {
       display: flex;
       justify-content: center;
@@ -53,4 +48,3 @@ body {
     .toggle-switch.dark .toggle-handle {
       left: 27px;
     }
-    

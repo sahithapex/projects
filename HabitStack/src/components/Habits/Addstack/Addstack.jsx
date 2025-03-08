@@ -1,6 +1,6 @@
 import React from "react";
-import { useAppContext } from "../contextApi/contextApi";
-import Routine from "./Routine.jsx";
+import { useAppContext } from "../../contextApi/contextApi";
+import Routine from "../Routine.jsx";
 import "./Addstack.css";
 
 const Addstack = () => {
