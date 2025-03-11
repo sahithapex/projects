@@ -17,5 +17,5 @@ import { createSlice } from "@reduxjs/toolkit";
             }
       }
  })
- export const {increment,decrement,reducers}= counterSlice.actions;
+ export const {increment,decrement, reset}= counterSlice.actions;
  export default counterSlice.reducer
