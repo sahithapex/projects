@@ -1,29 +1,42 @@
 .addstack-container {
   width: 28%;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
   background: var(--bg-color);
   color: var(--text-color);
 }
+.addstack-heading{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
 
-.addstack-label {
-  display: block;
-  font-weight: bold;
-  margin: 10px 0 5px;
-  color: var(--text-color);
 }
+.addstack-main{
+  display: flex;
+flex-direction: row;
 
-.addstack-input,
-.addstack-select {
-  width: 80%;
-  padding: 8px;
-  margin-bottom: 15px;
+  gap: 10px;
+}
+.addstack-time{
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
   box-sizing: border-box;
+
+}
+.addstack-input {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  justify-content: start !important;
 }
 
 .addstack-input:focus,
@@ -33,23 +46,7 @@
   box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
 }
 
-.addstack-time-selection {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
 
-.addstack-time-selection .addstack-select {
-  flex: 1;
-  text-align: center;
-}
-
-.addstack-divider {
-  margin-top: 20px;
-  border: none;
-  height: 1px;
-  background: var(--divider-color);
-}
 
 .sub-btn {
   background-color: #007bff;
