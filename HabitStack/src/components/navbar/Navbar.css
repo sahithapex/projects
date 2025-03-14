@@ -1,12 +1,21 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 10px;
+  background-color: var(--primary-dark);
+  position: relative;
 
-.header {
-      text-align: center;
-      font-weight: bold;
-      color: white;
-      background: #121212;
-      display: flex; 
-      justify-content: space-between;
-      padding: 10px 12px;
-      margin-bottom: 20px;
-    }
-    
+}
+.navlogo{
+  color: white;
+  display: flex;
+  font-family: serif;
+  align-items: center;
+}
+.logo{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}

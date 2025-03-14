@@ -4,9 +4,7 @@ const Mainbar = () => {
   return (
     <div>
       <nav>
-            <
-            <link to="">Dashboard</link>
-
+           
       </nav>
       
     </div>
