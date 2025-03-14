@@ -1,10 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
+import habitStacksfake from './habitfakelist'
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(false);
-  const [habitStacks, setHabitStacks] = useState([]); 
+  const [habitStacks, setHabitStacks] = useState(habitStacksfake); 
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
