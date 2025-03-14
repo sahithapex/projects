@@ -1,10 +1,11 @@
 import React from "react";
 import "./Navbar.css";
 import { useAppContext } from "../contextApi/contextApi";
-import Logo from '../../assets/Habit stack.png'
+import Logo from '../../assets/Habit.png'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const Navbar = () => {
-  const { toggleTheme } = useAppContext();
+  // const { toggleTheme } = useAppContext();
   return (
  <nav className="navbar">
   <div className="navlogo"> 
@@ -12,7 +13,6 @@ const Navbar = () => {
   <h1>Habit Stack</h1>
   </div>
    
-  
  </nav>
   )
 }

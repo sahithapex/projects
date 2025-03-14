@@ -18,7 +18,7 @@ export const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ isDark, toggleTheme,habitStacks, addHabitStack }}>
+    <AppContext.Provider value={{ toggleTheme,habitStacks, addHabitStack }}>
       {children}
     </AppContext.Provider>
   );
