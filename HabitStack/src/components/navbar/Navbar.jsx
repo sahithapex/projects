@@ -14,7 +14,6 @@ const Navbar = () => {
   </div>
   <div className="navtoggle">
   <MaterialUISwitch onChange={toggleTheme} />
-
 </div>
 
  </nav>
