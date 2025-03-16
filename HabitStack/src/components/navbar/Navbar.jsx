@@ -3,7 +3,6 @@ import "./Navbar.css";
 import { useAppContext } from "../contextApi/contextApi";
 import Logo from '../../assets/Habit.png'
 import MaterialUISwitch  from './toggle'
-import Swiper from '../Header/Headbar'
 
 const Navbar = () => {
   const { toggleTheme } = useAppContext();
@@ -15,7 +14,7 @@ const Navbar = () => {
   </div>
   <div className="navtoggle">
   <MaterialUISwitch onChange={toggleTheme} />
-  <Swiper />
+
 </div>
 
  </nav>

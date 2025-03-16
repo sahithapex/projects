@@ -6,7 +6,6 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import BookIcon from "@mui/icons-material/Book";
 import ExploreIcon from "@mui/icons-material/Explore";
 import SettingsIcon from "@mui/icons-material/Settings";
-
 const NavbarItems = [
   { text: "Dashboard", icon: <DashboardIcon />, path: "/dashboard" },
   { text: "Create Habit Stack", icon: <AddCircleIcon />, path: "/create-habit" },

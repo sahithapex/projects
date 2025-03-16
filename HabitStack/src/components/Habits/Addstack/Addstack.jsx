@@ -2,7 +2,7 @@ import React from "react";
 import { useAppContext } from "../../contextApi/contextApi.jsx";
 import routineList from "../Routine.jsx"
 import "./Addstack.css";
-import Finallist from "./Finallist.jsx";
+
 
 const Addstack = () => {
   const { addHabitStack } = useAppContext();
@@ -55,7 +55,6 @@ const Addstack = () => {
 
         <button type="submit" className="sub-btn">Submit</button>
       </form>
-      <Finallist />
     </div>
   );
 };
