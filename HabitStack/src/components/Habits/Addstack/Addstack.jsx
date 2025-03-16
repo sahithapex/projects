@@ -34,6 +34,12 @@ const Addstack = () => {
             </option>
           ))}
         </select>
+        <input
+                type="text"
+                name=""
+                placeholder="Title or default Myhabit 1 (optional)"
+                className="addstack-input"
+              />
 
         <div className="addstack-input-group">
           {[...Array(5)].map((_, index) => (

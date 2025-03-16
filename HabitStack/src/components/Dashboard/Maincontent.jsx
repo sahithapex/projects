@@ -8,7 +8,6 @@ const Maincontent = () => {
   return (
     <div className="Main-content">
       <Addstack/>
-      <MiddleStack/>
       <ListStack/>
     </div>
   )
