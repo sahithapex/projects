@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar/Navbar.jsx';
 import { AppProvider } from "./components/contextApi/contextApi"; 
-import Maincontent from './components/Main content/Maincontent.jsx';
+import Maincontent from './components/Dashboard/Maincontent.jsx';
 import Headbar from './components/Header/Headbar.jsx';
 
 
