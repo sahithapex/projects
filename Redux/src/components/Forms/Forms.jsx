@@ -1,13 +1,20 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import './form.css';
-import { DevTool } from '@hookform/devtools'
+import React from "react";
+import { useForm } from "react-hook-form";
+import "./form.css";
+import { DevTool } from "@hookform/devtools";
+
+type FormValues = {
+  username: string;
+  email: string;
+  channel: string;
+};
 
 const Forms = () => {
-  const { register, handleSubmit,control } = useForm();
+  const form = useForm<FormValues>();
+  const { register, handleSubmit, control } = form;
 
-  const onSubmit = (data) => {
-    console.log(data); 
+  const onSubmit = (data: FormValues) => {
+    console.log(data);
   };
 
   return (
@@ -25,7 +32,7 @@ const Forms = () => {
 
         <button type="submit">Submit</button>
       </form>
-      <DevTool control={control}/>
+      <DevTool control={control} />
     </div>
   );
 };
